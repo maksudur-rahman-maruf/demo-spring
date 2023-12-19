@@ -1,8 +1,8 @@
 pipeline {
-    agent any
-    // environment {
-    //     BLACKDUCK_TRUST_CERT=true
-    // }
+    // agent any
+    agent {
+        label 'linux-agent'
+    }
     stages {
         stage("unit-test") {
             steps {
