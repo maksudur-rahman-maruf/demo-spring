@@ -1,8 +1,8 @@
 pipeline {
-    // agent any
-    agent {
-        label 'linux-agent'
-    }
+    agent any
+    // agent {
+    //     label 'linux-agent'
+    // }
     stages {
         stage("unit-test") {
             steps {
