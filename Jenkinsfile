@@ -18,7 +18,7 @@ pipeline {
 
                 script {
 
-                   synopsys_scan product:'blackduck',  blackduck_url: 'https://testing.blackduck.synopsys.com/', blackduck_automation_prcomment: true
+                   synopsys_scan product:'blackduck'
 
                 }	
             }
