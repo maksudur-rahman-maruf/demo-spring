@@ -17,7 +17,7 @@ pipeline {
               	echo 'SYNOPSYS SECURITY SCAN EXECUTION STARTED'
 
                 script {
-                   synopsys_scan product:'blackduck'
+                   synopsys_scan product:'blackduck', blackduck_scan_full: true
                 }	
             }
         }
